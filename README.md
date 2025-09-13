@@ -1,13 +1,35 @@
-# React + Vite
+# Club del Ciclomotor - Tienda Online
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## Descripción
+Club del Ciclomotor es una tienda online donde se pueden ver productos para ciclomotores, agregarlos al carrito y finalizar la compra. Los productos y las órdenes se guardan en **Firebase**.
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## Funcionalidades
 
-## Expanding the ESLint configuration
+- Ver listado de productos y filtrar por categoría.
+- Ver detalle de cada producto con descripción, precio y stock.
+- Seleccionar cantidad de productos con `ItemCount`.
+- Agregar productos al carrito y modificar cantidades.
+- Carrito muestra todos los productos y el total.
+- Checkout con formulario de datos del comprador obligatorio.
+- Al finalizar la compra:
+  - Se crea la orden en Firebase.
+  - Se descuenta el stock de los productos.
+  - Se vacía el carrito y se muestra un mensaje de confirmación con el ID de la orden.
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
-# tiendareact
+---
+
+## Tecnologías utilizadas
+
+- React
+- Bootstrap para el diseño
+- Firebase Firestore para la base de datos
+- React Router para navegar entre secciones
+
+---
+
+## dominio del sitio
+
+https://tiendareactv2.netlify.app/
+
